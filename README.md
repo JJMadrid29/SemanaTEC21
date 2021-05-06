@@ -31,7 +31,7 @@ Link con los modelos utilizados: [Modelos pruebas](https://drive.google.com/driv
 Para poder correr el programa solo se escribe en la consola/bash lo siguiente:
 Nota: se debe de corren en la carpeta en la que se encuentren los archivos.
 
- python3 filtro.py
+ ```python3 filtro.py```
 
 ## Código de referencia
 ***
