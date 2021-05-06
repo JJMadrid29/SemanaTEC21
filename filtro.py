@@ -88,6 +88,9 @@ for (x, y, w, h) in faces:
     k = cv2.waitKey(1) & 0xFF
     if k == 27:
         break
+
+cap.release()
+cv2.destroyAllWindows()
         
          
        
