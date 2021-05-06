@@ -15,3 +15,6 @@ eje = 0
 while True:
 
     ret, frame = cap.read()
+    if ret == False: break
+    #resolucion de la ventana
+    frame = imutils.resize(frame, width=848)
