@@ -81,8 +81,10 @@ for (x, y, w, h) in faces:
         else:
             frame[0 : yf, x : x + col_image] = result
         
+        # Mostrar el frame del video
         cv2.imshow('frame',frame)
     
+    # Revisar si se usa la tecla escape para cerrar el programa
     k = cv2.waitKey(1) & 0xFF
     if k == 27:
         break
