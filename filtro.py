@@ -72,7 +72,13 @@ for (x, y, w, h) in faces:
         bg_black = cv2.bitwise_and(resized_image, resized_image, mask=mask)
         bg_black = bg_black[dif:, :, 0:3]
         bg_frame = cv2.bitwise_and(n_frame, n_frame, mask=mask_inv[dif:,:])
-       
-
         
+        result = cv2.add(bg_black, bg_frame)
+        if yi >= 0:
+            frame[yi : yf, x : x + col_image] = result
+
+        else:
+            frame[0 : yf, x : x + col_image] = result
+       
+     
       
