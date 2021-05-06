@@ -81,6 +81,11 @@ for (x, y, w, h) in faces:
         else:
             frame[0 : yf, x : x + col_image] = result
         
+        cv2.imshow('frame',frame)
+    
+    k = cv2.waitKey(1) & 0xFF
+    if k == 27:
+        break
         
          
        
