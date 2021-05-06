@@ -89,6 +89,7 @@ for (x, y, w, h) in faces:
     if k == 27:
         break
 
+# Cerrar procesos
 cap.release()
 cv2.destroyAllWindows()
         
