@@ -13,9 +13,9 @@
 ## Dependencias necesarias
 ***
 Despues de clonar este repositorio, es necesario instalar:
-    -Python3
-    -Imutils
-    -OpenCV
+    - Python3
+    - Imutils
+    - OpenCV
     
 ## Modelos
 ***
