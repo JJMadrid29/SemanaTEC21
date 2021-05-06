@@ -39,11 +39,9 @@ for (x, y, w, h) in faces:
         col_image = w
         # Determinar una porción del alto de la imagen de entrada 
         # redimensionada
-        
         #porcion_alto = filas_image //4 
         porcion_alto = 0
         #print(porcion_alto) //Nota: Es una prueba
-        #print(porcion_alto)
         dif = 0
         
         yi = y + porcion_alto + eje 
@@ -52,7 +50,16 @@ for (x, y, w, h) in faces:
         # La imagen de entrada redimensionada
         #se verá si hay suficiente espacio en 
         #el rostro detectado
-        
+       if yi >= 0:
+
+            # Tomamos la sección de frame, en donde se va a ubicar
+            # el gorro/tiara
+            n_frame = frame[yi : yf, x : x + col_image]
+        else:
+            # Determinamos la sección de la imagen que excede a la del video
+            dif = abs(yi) 
+            # Tomamos la sección de frame, en donde se va a ubicar el filtro
+            n_frame = frame[0 : yf, x : x + col_image] 
         
         
          
