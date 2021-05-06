@@ -40,7 +40,10 @@ for (x, y, w, h) in faces:
         # Determinar una porción del alto de la imagen de entrada 
         # redimensionada
         
-        porcion_alto = filas_image //4 
+        #porcion_alto = filas_image //4 
+        porcion_alto = 0
+        print(porcion_alto)
+       
 
         
       
