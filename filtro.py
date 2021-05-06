@@ -26,4 +26,37 @@ while True:
     
     # Detección de los rostros presentes en el fotograma
     faces = faceClassif.detectMultiScale(frame, 1.3, 5)
+ 
+#creación ciclo
+for (x, y, w, h) in faces:
+        #cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0),2)
+        # Redimensionar la imagen de entrada de acuerdo al ancho del
+        # rostro detectado
+        resized_image = imutils.resize(image, width=w)
+        #cv2.imshow('frome',resized_image) //Nota: Prueba
+        filas_image = resized_image.shape[0]
+        #print("filas_image ",resized_image.shape[0]) // Nota: Prueba
+        col_image = w
+        # Determinar una porción del alto de la imagen de entrada 
+        # redimensionada
+        
+        #porcion_alto = filas_image //4 
+        porcion_alto = 0
+        #print(porcion_alto) //Nota: Es una prueba
+        #print(porcion_alto)
+        dif = 0
+        
+        yi = y + porcion_alto + eje 
+        yf = y + porcion_alto + filas_image + eje
+        
+        # La imagen de entrada redimensionada
+        #se verá si hay suficiente espacio en 
+        #el rostro detectado
+        
+        
+        
+         
+       
 
+        
+      
