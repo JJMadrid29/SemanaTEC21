@@ -65,6 +65,13 @@ for (x, y, w, h) in faces:
         # redimensionada y también la invertimos
         mask = resized_image[:, :, 3]
         mask_inv = cv2.bitwise_not(mask)
+
+        # Creamos una imagen con fondo negro y la imagen
+        # Luego creamos una imagen en donde en el fondo esté frame
+        # y en negro la imagen
+        bg_black = cv2.bitwise_and(resized_image, resized_image, mask=mask)
+        bg_black = bg_black[dif:, :, 0:3]
+        bg_frame = cv2.bitwise_and(n_frame, n_frame, mask=mask_inv[dif:,:])
        
 
         
