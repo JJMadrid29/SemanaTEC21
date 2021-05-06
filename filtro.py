@@ -12,3 +12,6 @@ image = cv2.imread('sidd.png', cv2.IMREAD_UNCHANGED)
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 eje = 0
+while True:
+
+    ret, frame = cap.read()
