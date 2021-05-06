@@ -61,8 +61,10 @@ for (x, y, w, h) in faces:
             # Tomamos la sección de frame, en donde se va a ubicar el filtro
             n_frame = frame[0 : yf, x : x + col_image] 
         
-        
-         
+        # Determinamos la máscara que posee la imagen de entrada
+        # redimensionada y también la invertimos
+        mask = resized_image[:, :, 3]
+        mask_inv = cv2.bitwise_not(mask)
        
 
         
