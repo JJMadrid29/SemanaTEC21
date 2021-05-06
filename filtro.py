@@ -33,5 +33,11 @@ for (x, y, w, h) in faces:
         # Redimensionar la imagen de entrada de acuerdo al ancho del
         # rostro detectado
         resized_image = imutils.resize(image, width=w)
-        #cv2.imshow('frome',resized_image)
+        cv2.imshow('frome',resized_image)
+        filas_image = resized_image.shape[0]
+        print("filas_image ",resized_image.shape[0])
+        col_image = w
 
+       
+        
+      
