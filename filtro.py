@@ -42,7 +42,20 @@ for (x, y, w, h) in faces:
         
         #porcion_alto = filas_image //4 
         porcion_alto = 0
-        print(porcion_alto)
+        #print(porcion_alto) //Nota: Es una prueba
+        #print(porcion_alto)
+        dif = 0
+        
+        yi = y + porcion_alto + eje 
+        yf = y + porcion_alto + filas_image + eje
+        
+        # La imagen de entrada redimensionada
+        #se verá si hay suficiente espacio en 
+        #el rostro detectado
+        
+        
+        
+         
        
 
         
