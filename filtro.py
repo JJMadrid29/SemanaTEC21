@@ -28,7 +28,7 @@ while True:
     faces = faceClassif.detectMultiScale(frame, 1.3, 5)
  
 #creación ciclo
-for (x, y, w, h) in faces:
+    for (x, y, w, h) in faces:
         #cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0),2)
         # Redimensionar la imagen de entrada de acuerdo al ancho del
         # rostro detectado
@@ -50,7 +50,7 @@ for (x, y, w, h) in faces:
         # La imagen de entrada redimensionada
         #se verá si hay suficiente espacio en 
         #el rostro detectado
-       if yi >= 0:
+        if yi >= 0:
 
             # Tomamos la sección de frame, en donde se va a ubicar
             # el gorro/tiara
@@ -82,7 +82,7 @@ for (x, y, w, h) in faces:
             frame[0 : yf, x : x + col_image] = result
         
         # Mostrar el frame del video
-        cv2.imshow('frame',frame)
+    cv2.imshow('frame',frame)
     
     # Revisar si se usa la tecla escape para cerrar el programa
     k = cv2.waitKey(1) & 0xFF
